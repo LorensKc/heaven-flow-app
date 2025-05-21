@@ -1,0 +1,76 @@
+@use '../../vars.scss' as *;
+
+.main-screen {
+    display: flex;
+    justify-content: center;
+    background-image: url('../../assets/images/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mediaDesktop($w1024) {
+        background-size: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        max-width: 1300px;
+        padding: 50px 23px 60px;
+        @include mediaDesktop($w1024) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;   
+        }
+
+        img {
+            width: 100%;
+            margin: 0 0 31px;
+            @include mediaDesktop($w1280) {
+                margin: 0;
+            }
+        }
+    }
+
+    &__content {
+        h1 {
+            margin: 0 0 20px;
+            color: #143581;
+            font-weight: 700;
+            font-size: 40px;
+            text-transform: uppercase;
+            @include mediaDesktop($w1280) {
+                font-size: 48px;
+            }
+        }
+
+        .subtitle {
+            margin: 0 0 21px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            @include mediaDesktop($w1280) {
+                font-size: 36px;
+                line-height: 46px;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include mediaDesktop($w1280) {
+            flex-direction: row;
+        }
+
+        a {
+            &:first-child {
+                margin: 0 0 15px 0;
+                @include mediaDesktop($w1280) {
+                    margin: 0 35px 0 0;
+                }
+            }
+        }
+    }
+}

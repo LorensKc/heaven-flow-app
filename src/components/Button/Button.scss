@@ -1,0 +1,42 @@
+@use '../../vars.scss' as *;
+
+.button {
+    display: block;
+    padding: 15px 19px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    @include mediaDesktop($w1024) {
+        padding: 18px 19px;
+    }
+
+    &__thin {
+        text-transform: none;
+        font-weight: 500;
+        padding: 11px 19px;
+    }
+    &__regular {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+.bg-green {
+    background-color: #34B264;
+    &:hover {
+        background-color: #1F8647;
+    }
+}
+
+.bg-dark {
+    background-color: #191D36;
+    &:hover {
+        color: #85E5AA;
+        background-color: #0B0C17;
+    }
+}

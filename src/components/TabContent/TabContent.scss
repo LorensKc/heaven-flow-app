@@ -1,0 +1,85 @@
+@use '../../vars.scss' as *;
+
+.tab-content {
+    padding: 30px 0;
+    width: 100%;
+
+
+    &__block {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0 0 15px;
+        padding: 18px 16px;
+        background-color: #F3F3F3;
+        border-radius: 14px;
+
+        @include mediaDesktop($w1024) {
+            padding: 13px 50px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 21px;
+        height: 12px;
+        flex-shrink: 0;
+        transition: .25s;
+        pointer-events: none;
+        background-image: url('../../assets/images/faq-arrow.svg');
+        background-position: center;
+        background-size: cover;
+
+        &.open-content {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        text-transform: uppercase;
+
+        .title {
+            font-size: 18px;
+            font-weight: 700;
+
+            @include mediaDesktop($w1024) {
+                // line-height: 46px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__body {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: all .3s ease;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+
+            @include mediaDesktop($w1024) {
+                font-size: 20px;
+            }
+        }
+
+        &.open-content {
+            height: auto;
+            margin-top: 10px;
+        }
+    }
+}

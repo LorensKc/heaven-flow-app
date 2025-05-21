@@ -1,0 +1,62 @@
+@use '../../vars.scss' as *;
+
+.header {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 11px 14px;
+        @include mediaDesktop($w1024) {
+            padding: 23px 45px 21px;
+        }
+    }
+
+    &__links-container {
+        display: none;
+        flex-flow: row nowrap;
+        align-items: center;
+        @include mediaDesktop($w768) {
+            display: flex;
+        }
+    }
+    
+    &__language-dropdown {
+        width: 83px;
+        height: 43px;
+        padding: 10px 14px;
+        margin-left: 10px;
+        background-color: #E9E9E9;
+        border-radius: 5px;
+        border: none;
+        color: #191D36;
+        font-weight: 500;
+        font-size: 20px;
+    
+        option {
+            background-color: #191D36;
+            color: #fff;
+
+            &:active {
+                background-color: red;
+            }
+        }   
+    }
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 15%;
+        margin-right: 10px;
+    }
+
+    span {
+        font-weight: 900;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+

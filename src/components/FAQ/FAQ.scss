@@ -1,0 +1,97 @@
+@use '../../vars.scss' as *;
+
+.faq {
+    padding: 30px 0;
+
+    // .main-title {
+    //     &.desktop {
+    //         display: none;
+
+    //         @include mediaDesktop($w1024) {
+    //             display: block;
+    //         }
+    //     }
+
+    //     &.mobile {
+    //         display: block;
+
+    //         @include mediaDesktop($w1024) {
+    //             display: none;
+    //         }
+    //     }
+    // }
+
+    &__accordeon-block {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0 0 15px;
+        padding: 27px 16px;
+        background-color: #F3F3F3;
+        border-radius: 14px;
+        @include mediaDesktop($w1024) {
+            padding: 25px 50px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__accordeon-header {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__accordeon-icon {
+        display: inline-block;
+        width: 21px;
+        height: 12px;
+        flex-shrink: 0;
+        transition: .25s;
+        pointer-events: none;
+        background-image: url('../../assets/images/faq-arrow.svg');
+        background-position: center;
+        background-size: cover;
+    
+        &.open-content {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__accordeon-title {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        text-transform: uppercase;
+
+        .title {
+            font-size: 18px;
+            font-weight: 700;
+            @include mediaDesktop($w1024) {
+                line-height: 46px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__accordeon-body {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: all .3s ease;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            @include mediaDesktop($w1024) {
+                font-size: 20px;
+            }
+        }
+
+        &.open-content {
+            height: auto;
+            margin-top: 10px;
+        }
+    } }

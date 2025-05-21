@@ -4,11 +4,8 @@ function FAQItem({ title, text }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="faq__accordeon-block">
-      <div className="faq__accordeon-header">
-        <div
-          className="faq__accordeon-title"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+      <div className="faq__accordeon-header" onClick={() => setIsOpen(!isOpen)}>
+        <div className="faq__accordeon-title">
           <div className="title">{title}</div>
         </div>
         <i className={"faq__accordeon-icon" + (isOpen ? " open-content" : "")}></i>

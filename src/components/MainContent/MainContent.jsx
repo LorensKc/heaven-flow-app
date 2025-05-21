@@ -13,7 +13,7 @@ function MainContent() {
       <section className="main-content">
         <TabContent />
 
-        <BlockContent title="Tools and Platforms for Implementing Gamification">
+        <BlockContent identify="chapter-1" title="Tools and Platforms for Implementing Gamification">
           <p>
             Have you ever wondered how to make your website not only functional
             but also engaging? Game design is the art of transforming
@@ -24,7 +24,7 @@ function MainContent() {
           </p>
         </BlockContent>
 
-        <BlockContent title="Gamification as a Key Element" image={textImage}>
+        <BlockContent identify="chapter-2" title="Gamification as a Key Element" image={textImage}>
           <p>
             In this webinar, we will focus on how gamification elements can be
             integrated into different types of websites. We’ll explore how
@@ -38,7 +38,7 @@ function MainContent() {
           </p>
         </BlockContent>
 
-        <BlockContent title="Key Takeaways and Recommendations for Successful Gamification on Your Website">
+        <BlockContent identify="chapter-3" title="Key Takeaways and Recommendations for Successful Gamification on Your Website">
           <p>
             After participating in the webinar, you will be ready to integrate
             gamification into your website, creating a more engaging and
@@ -59,11 +59,11 @@ function MainContent() {
 
         <Button lnk={"google.com"} title="Register Now" cls="bg-green button__regular" />
 
-        <BlockContent title="Advantages and Disadvantages">
+        <BlockContent identify="chapter-4" title="Advantages and Disadvantages">
           <Advantage />
         </BlockContent>
 
-        <BlockContent title="Theoretical and Practical Aspects">
+        <BlockContent identify="chapter-5" title="Theoretical and Practical Aspects">
           <p>
             We offer not only theoretical knowledge but also real-world examples
             from sites that successfully use gamification. You will see how
@@ -75,7 +75,7 @@ function MainContent() {
           </p>
         </BlockContent>
 
-        <BlockContent title="Adapting to Different Niches" image={textImage2}>
+        <BlockContent identify="chapter-6" title="Adapting to Different Niches" image={textImage2}>
           <p>
             Gamification can be adapted to various fields — from personal blogs
             to large corporate sites and online stores. In the webinar, we’ll
@@ -102,7 +102,7 @@ function MainContent() {
 
         <Button lnk={"google.com"} title="Register Now" cls="bg-green button__regular" />
 
-        <BlockContent title="Long-Term Results" image={textImage3}>
+        <BlockContent identify="chapter-7" title="Long-Term Results" image={textImage3}>
           <p>
             Gamification implementation is not just a trend. We will show you
             how to integrate these elements so they bring long-term results,
@@ -125,7 +125,7 @@ function MainContent() {
           </p>
         </BlockContent>
 
-        <BlockContent title="Key Takeaways and Recommendations for Successful">
+        <BlockContent identify="chapter-8" title="Key Takeaways and Recommendations for Successful">
           <p>
             After participating in the webinar, you will be ready to integrate
             gamification into your website, creating a more engaging and
@@ -146,7 +146,7 @@ function MainContent() {
 
         <Button lnk={"google.com"} title="Register Now" cls="bg-green button__regular" />
 
-        <BlockContent title={"FAQ"}>
+        <BlockContent identify="faq" title={"FAQ"}>
           <FAQ />
         </BlockContent>
       </section>

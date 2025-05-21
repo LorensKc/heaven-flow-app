@@ -9,13 +9,14 @@
         display: flex;
         flex-flow: column nowrap;
         margin: 0 0 15px;
-        padding: 18px 16px;
-        background-color: #F3F3F3;
+        // padding: 18px 16px;
+        overflow: hidden;
+        
         border-radius: 14px;
 
-        @include mediaDesktop($w1024) {
-            padding: 13px 50px;
-        }
+        // @include mediaDesktop($w1024) {
+        //     padding: 13px 50px;
+        // }
 
         &:last-child {
             margin-bottom: 0;
@@ -27,6 +28,8 @@
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between;
+        padding: 22px 16px;
+        background-color: #F3F3F3;
     }
 
     &__icon {
@@ -65,21 +68,36 @@
     &__body {
         display: block;
         height: 0;
+        
+        background-color: #FAFAFA;
         overflow: hidden;
         transition: all .3s ease;
 
-        p {
-            margin: 0;
-            font-size: 14px;
+        ul {
+            padding: 13px 16px;
+            @include mediaDesktop($w1280) {
+                padding: 13px 50px;
+            }
 
-            @include mediaDesktop($w1024) {
-                font-size: 20px;
+            li {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                margin-bottom: 13px;
+                @include mediaDesktop($w1280) {
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 46px;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
 
         &.open-content {
             height: auto;
-            margin-top: 10px;
         }
     }
 }

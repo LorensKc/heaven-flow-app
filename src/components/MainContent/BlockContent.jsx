@@ -1,6 +1,6 @@
-function BlockContent({title, image, children}) {
+function BlockContent({title, image, children, identify}) {
   return (
-    <div className="block-content">
+    <div className="block-content" id={identify}>
       <div className="block-content__description">
         <h2 className="block-content__title">{title}</h2>
         <div className="block-content__text">{children}</div>

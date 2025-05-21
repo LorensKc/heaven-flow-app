@@ -12,8 +12,12 @@ function Header() {
             <span>Heaven Flow</span>
           </a>
           <div className="header__links-container">
-            <Button lnk={"google.com"} title="Register Now" cls="bg-green button__thin" />
-            <LanguageDropdown />
+            <Button
+              lnk={"google.com"}
+              title="Register Now"
+              cls="bg-green button__thin"
+            />
+            <LanguageDropdown optionsList  = {[{id: 1, name: 'EN'}, {id: 2, name: 'UA'}]}/>
           </div>
         </div>
       </header>

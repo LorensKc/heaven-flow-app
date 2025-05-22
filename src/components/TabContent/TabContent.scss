@@ -37,7 +37,7 @@
         width: 21px;
         height: 12px;
         flex-shrink: 0;
-        transition: .25s;
+        transition: .3s;
         pointer-events: none;
         background-image: url('../../assets/images/faq-arrow.svg');
         background-position: center;
@@ -66,10 +66,8 @@
     }
 
     &__body {
-        display: block;
         max-height: 0;
-        
-        background-color: #FFF;
+        background-color: #FAFAFA;
         overflow: hidden;
         transition: all .5s ease-in-out;
 

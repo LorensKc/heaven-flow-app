@@ -22,7 +22,6 @@
 
     &__link {
         font-size: 12px;
-        font-weight: 500;
         line-height: 46px;
         text-transform: uppercase;
         @include mediaDesktop($w1024) {

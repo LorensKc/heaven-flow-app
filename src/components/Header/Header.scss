@@ -29,7 +29,6 @@
         border-radius: 5px;
         border: none;
         color: #191D36;
-        font-weight: 500;
         font-size: 20px;
     
         option {
@@ -42,57 +41,59 @@
         }   
     }
 
-    //Custom Select
+    //Custom Select START
     .custom-select-container {
         display: inline-block;
-        min-width: 250px;
-        text-align: center;
+        width: 83px;
+        height: 43px;
+        min-width: 85px;
+        margin-left: 10px;
+        padding: 10px 14px;
+        background-color: #E9E9E9;
+        border-radius: 5px;
         position: relative;
-    }
-
-    .selected-text {
-        background-color: #47eded;
-        padding: 6px 20px;
-        border-bottom: 1px solid #37b0b0;
-    }
-
-    .selected-text::after {
-        content: "";
-        position: absolute;
-        right: 10px;
-        top: 16px;
-        border: 7px solid transparent;
-        border-color: #fff transparent transparent transparent;
-    }
-
-    .selected-text.active::after {
-        top: 8px;
-        border-color: transparent transparent #fff transparent;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-
-    .select-options {
-        position: absolute;
-        width: 100%;
-    }
-
-    li {
-        list-style-type: none;
-        padding: 6px 20px;
-        background: #47eded;
-        border-bottom: 1px solid #37b0b0;
+        box-sizing: border-box;
         cursor: pointer;
+
+        .selected-text {
+            color: #191D36;
+            font-size: 20px;
+    
+            &:after {
+                content: "";
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-top: 11px solid #191D36;
+            }
+        }
+
+        .select-options {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+            background:#191D36;
+    
+            .custom-select-option {
+                padding: 14px 20px 13px 14px;
+                color: #E9E9E9;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: rgba(255, 255, 255, .1);
+                }
+            }
+        }
     }
 
-    li:hover {
-        background-color: #32a6a6;
-        color: #ffffff;
-    }
+    //Custom Select END
 }
 
 

@@ -76,7 +76,7 @@ function MainContent() {
         </BlockContent>
 
         <BlockContent identify="chapter-6" title="Adapting to Different Niches">
-          <img src={textImage2} alt="" srcset="" />
+          <img className="block-content__image" src={textImage2} alt="" srcset="" />
           <p>
             Gamification can be adapted to various fields — from personal blogs
             to large corporate sites and online stores. In the webinar, we’ll

@@ -1,0 +1,23 @@
+@use '../../vars.scss' as *;
+
+.error-block {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 100vh;
+
+    &__title-block {
+        color: #143581;
+        font-weight: 900;
+        text-transform: uppercase;
+        h1 {
+            font-size: 220px;
+        }
+
+        h2 {
+            font-size: 60px;
+        }
+    }
+}

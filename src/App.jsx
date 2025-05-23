@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import MainContent from './components/MainContent/MainContent';
 import MainScreen from './components/MainScreen/MainScreen';
 import FloatBlock from './components/FloatBlock/FloatBlock';
+import ErrorBlock from './components/ErrorBlock/ErrorBlock';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <FloatBlock />
       <MainContent />
       <Footer />
+      {/* <ErrorBlock /> */}
     </>
   )
 }

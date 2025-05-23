@@ -76,7 +76,7 @@ function MainContent() {
         </BlockContent>
 
         <BlockContent identify="chapter-6" title="Adapting to Different Niches">
-          <img className="block-content__image" src={textImage2} alt="" srcset="" />
+          <img className="block-content__image" src={textImage2} alt="img_seo_text_2" srcset="" />
           <p>
             Gamification can be adapted to various fields — from personal blogs
             to large corporate sites and online stores. In the webinar, we’ll
@@ -103,7 +103,7 @@ function MainContent() {
 
         <Button lnk={"google.com"} title="Register Now" cls="bg-green button__regular" />
 
-        <BlockContent identify="chapter-7" title="Long-Term Results" image={textImage3}>
+        <BlockContent identify="chapter-7" title="Long-Term Results" image={textImage3} imgCls="unic">
           <p>
             Gamification implementation is not just a trend. We will show you
             how to integrate these elements so they bring long-term results,

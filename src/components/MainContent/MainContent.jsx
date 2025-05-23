@@ -57,7 +57,7 @@ function MainContent() {
           </p>
         </BlockContent>
 
-        <Button lnk={"google.com"} title="Register Now" cls="bg-green button__regular" />
+        <Button lnk={"https://google.com"} title="Register Now" cls="bg-green button__regular" />
 
         <BlockContent identify="chapter-4" title="Advantages and Disadvantages">
           <Advantage />
@@ -101,7 +101,7 @@ function MainContent() {
           </p>
         </BlockContent>
 
-        <Button lnk={"google.com"} title="Register Now" cls="bg-green button__regular" />
+        <Button lnk={"https://google.com"} title="Register Now" cls="bg-green button__regular" />
 
         <BlockContent identify="chapter-7" title="Long-Term Results" image={textImage3} imgCls="unic">
           <p>
@@ -145,7 +145,7 @@ function MainContent() {
           </p>
         </BlockContent>
 
-        <Button lnk={"google.com"} title="Register Now" cls="bg-green button__regular" />
+        <Button lnk={"https://google.com"} title="Register Now" cls="bg-green button__regular" />
 
         <BlockContent identify="faq" title={"FAQ"}>
           <FAQ />

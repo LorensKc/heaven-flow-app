@@ -13,7 +13,7 @@ function Header() {
           </a>
           <div className="header__links-container">
             <Button
-              lnk={"google.com"}
+              lnk={"https://google.com"}
               title="Register Now"
               cls="bg-green button__thin"
             />

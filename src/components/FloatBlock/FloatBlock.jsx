@@ -18,7 +18,7 @@ function FloatBlock() {
           <div className="float-block__title">
             Join us and become<br className="breakpoint" /> a GAME DESIGN MASTER!
           </div>
-          <Button lnk={"google.com"} title="Register Now" cls="bg-green button__float-thin" />
+          <Button lnk={"https://google.com"} title="Register Now" cls="bg-green button__float-thin" />
         </div>
 
         <a href="#" onClick={scrollToTop} className="float-block__button-float">

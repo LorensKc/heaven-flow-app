@@ -14,12 +14,12 @@ function MainScreen() {
             </div>
             <div className="main-screen__buttons">
               <Button
-                lnk={"google.com"}
+                lnk={"https://google.com"}
                 title="COPY PROMO CODE"
                 cls="bg-dark"
               />
               <Button
-                lnk={"google.com"}
+                lnk={"https://google.com"}
                 title="Register Now"
                 cls="bg-green"
               />
